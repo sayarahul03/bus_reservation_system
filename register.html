@@ -1,0 +1,16 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"><title>Register - BusGo</title></head>
+<body data-page="register">
+<nav><a class="logo" href="index.html">BusGo</a>
+<ul><li><a href="index.html" >Home</a></li>
+<li><a href="buses.html" class="active">Buses</a></li>
+<li><a href="bookings.html" >My bookings</a></li></ul></nav>
+<main><h1>Passenger registration</h1><div id="busInfo" class="sub">Loading bus details...</div>
+<div class="panel"><form id="regForm">
+<div class="row"><div><label for="passenger_name">Full name</label><input id="passenger_name" name="passenger_name" required></div>
+<div><label for="phone">Phone (10 digits)</label><input id="phone" name="phone" pattern="[0-9]{10}" required></div></div>
+<div class="row"><div><label for="email">Email (optional)</label><input id="email" name="email" type="email"></div>
+<div><label for="seats">Number of seats</label><input id="seats" name="seats_booked" type="number" min="1" value="1" required></div></div>
+<button class="btn" type="submit">Confirm booking</button><p id="formMsg" class="msg"></p></form></div></main>
+<footer>&copy; 2026 BusGo Bus Registration System</footer><script src="main.js"></script></body></html>

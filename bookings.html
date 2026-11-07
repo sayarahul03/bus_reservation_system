@@ -1,0 +1,13 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"><title>My bookings - BusGo</title></head>
+<body data-page="bookings">
+<nav><a class="logo" href="index.html">BusGo</a>
+<ul><li><a href="index.html" >Home</a></li>
+<li><a href="buses.html" >Buses</a></li>
+<li><a href="bookings.html" class="active">My bookings</a></li></ul></nav>
+<main><h1>My bookings</h1><p class="sub">Enter the phone number used while booking.</p>
+<div class="panel"><form id="lookupForm"><div class="row"><div><label for="phone">Phone (10 digits)</label><input id="phone" name="phone" pattern="[0-9]{10}" required></div></div>
+<button class="btn" type="submit">Find bookings</button></form></div>
+<div id="bookingList" style="margin-top:20px"></div></main>
+<footer>&copy; 2026 BusGo Bus Registration System</footer><script src="main.js"></script></body></html>
